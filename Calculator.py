@@ -15,6 +15,8 @@ def calculate_and_store(num1, num2, operator):
         result = num1 ** num2
     elif operator == '%':
         result = num1 % num2
+    elif operator == '**':
+        result = num1 ** num2
     return result
 
 
@@ -25,8 +27,8 @@ while True:
         print("Invalid")
         break
 
-    operator = input("Enter the operator (+, -, *, /, ^, %): ")
-    if operator == "+" or operator == "-" or operator == "*" or operator == "/" or operator == "^" or operator == "%":
+    operator = input("Enter the operator (+, -, *, /, ^, %, **): ")
+    if operator == "+" or operator == "-" or operator == "*" or operator == "/" or operator == "^" or operator == "%" or operator == "**":
         pass
     else:
         print("Invalid")
